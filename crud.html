@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projeto WebService 2019</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="css/estilo-grid.css">
+
+    <link rel="stylesheet" type="text/css" href="css/estilo-grid-320.css" media="screen and (max-width:320px)">
+    <link rel="stylesheet" type="text/css" href="css/estilo-grid-600.css" media="screen and (max-width:600px)">
+    <link rel="stylesheet" type="text/css" href="css/estilo-grid-1024.css" media="screen and (max-width:1024px)">
+    <link rel="stylesheet" type="text/css" href="css/estilo-grid-1200.css" media="screen and (max-width:1200px)">
+</head>
+<body onload="mostra()" >
+    <div id="container">
+
+        <div id="header">
+            <h1>MMA: Mixed Martial Arts</h1>
+            <img id="img-header" height="150px" src="http://mmabrasil.com.br/wp-content/uploads/2016/10/e-la-se-vai-o-maior-casca-grossa-da-historia-do-mma.jpg">
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="crud.html">Lista</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </div>      
+
+        <div id="main">
+            <div id="menu-lateral">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="crud.html">Lista</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>               
+            </div>
+            <div id="content">
+                    <div >
+                        <h2 style="padding: 15px;">Cadastro </h2>
+                        <div >
+                            <form id="formulario" onload="mostra()">
+                                <div >
+                                    <label>Nome:</label>
+                                    <input type="text" id="nome" >
+                                </div>
+                                <br>
+                                <div >
+                                    <label>Categoria:</label>
+                                    <input type="text" id="categoria" >
+                                </div>
+                                <br>
+                                <div >
+                                    <label>Idade:</label>
+                                    <input type="text" id="idade" >
+                                </div>
+                                <br>
+                                <div >
+                                    <label>Peso:</label>
+                                    <input type="text" id="peso" >
+                                </div>
+                                <br>
+                                <button type= "submit" >Adicionar</button>
+                            </form>
+                        </div>
+                </div>  
+                <br>
+        <div >
+            <div >
+                <fieldset>
+                    <legend>Tabela de Lutatores</legend>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Categoria</th>
+                                <th>Idade</th>
+                                <th>Peso</th>
+                                <th>Editar</th>
+                                <th>Finalizar</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultados"></tbody>
+                    </table>
+            </fieldset> 
+            </div>
+        </div>
+    </div>
+
+            </div>  
+        </div>
+
+        <div id="footer">
+            <p id="fim">Todos os direitos reservados &copy; | 
+                <a href="https://github.com/nikmantovani" target="_blank">GitHub</a>
+            </p>  
+        </div>
+
+    </div>
+
+</body>
+</html>

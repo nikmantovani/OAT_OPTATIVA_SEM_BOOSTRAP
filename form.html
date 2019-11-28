@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>Formulário</title>
+	<link rel="stylesheet" type="text/css" href="css/form.css" />
+</head>
+
+<body>
+	<div id="interface">
+		<section id="corpo-full">
+			</header>
+			<form method="post" id="fContato">
+				<fieldset id="usuario" style="background: url('img/contato.png') no-repeat 95% 95%;">
+					<legend>Cadastro do usuário</legend>
+					<p>
+						<label for="cCod">Código:</label>
+						<input type="text" name="tCod" id="cCod" size="19" maxlength="30">
+					</p>
+					<p>
+						<label for="cCat">Categoria:</label>
+						<input type="text" name="tCat" id="cCat" size="17" maxlength="30">
+					</p>
+					<p>
+						<label for="cDesc">Descrição:</label>
+						<input type="text" name="tDesc" id="cDesc" size="17" maxlength="30">
+					</p>
+					<p>
+						<label for="cValor">Valor:</label>
+						<input type="text" name="tValor" id="cValor" size="20" maxlength="30">
+					</p>				
+					<button class="bt bt-w" onclick="alert('Desculpe, mas por enquanto não podemos enviar seus dados!')">Enviar</button>
+					<a class="bt bt-w" href="javascript:history.go(-1)">Voltar</a>
+			</form>
+		</section>
+	</div>
+</body>
+</html>
